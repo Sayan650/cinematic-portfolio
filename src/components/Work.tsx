@@ -27,7 +27,7 @@ const projects = [
       tech: ["Vue.js", "Express", "Socket.io", "MongoDB"],
       image: "/Boardlify.png",
       github: "https://github.com/Sayan650/boardlify.git",
-      live: "#",
+      live: "https://boardlify.vercel.app/",
       featured: false,
       layout: "wide",
     },
