@@ -37,7 +37,7 @@ const projects = [
       description:
         "Developed a deep learning–based mobile application that analyzes skin lesion images to identify potential dermatological conditions. Built using React Native, Node.js, TensorFlow/PyTorch, and ResNet50, the system provides AI-powered predictions with confidence scores to support early disease screening.",
       tech: ["React Native", "Node.js", "TensorFlow", "PyTorch", "ResNet50", "MongoDB", "OpenCV", "NumPy"],
-      image: "/robot.png",
+      image: "/AIDetection.png",
       github: "https://github.com/Sayan650/AIDetection.git",
       live: "https://ai-detection.vercel.app/",
       featured: false,

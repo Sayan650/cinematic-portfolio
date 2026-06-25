@@ -98,11 +98,11 @@ export default function Contact() {
 
         <div className="mt-16 pt-8 border-t border-kimono-white/10 flex flex-wrap gap-8 justify-between items-center">
           <div className="flex flex-wrap gap-6">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Twitter/X</a>
+            <a href="https://github.com/Sayan650" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/sayanp650-nitdgp/" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">LinkedIn</a>
+            <a href="https://x.com/sayanp650" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Twitter/X</a>
             <a href="https://instagram.com/paulland2002" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Instagram</a>
-            <a href="mailto:hello@example.com" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Email</a>
+            <a href="mailto:sayanp650@gmail.com" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Email</a>
           </div>
           <p className="text-[10px] uppercase tracking-widest text-muted-gray">
             © 2026 Sayan Portfolio. All Rights Reserved.
