@@ -9,46 +9,51 @@ const uiDesigns = [
     title: "E-commerce App",
     category: "Mobile Design",
     year: "2024",
-    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop",
+    image: "/E-Commerce.png",
     layout: "wide",
     tech: "Figma, Prototyping, User Research",
-    desc: "A modern e-commerce mobile application design with intuitive user flow, featuring product discovery, seamless checkout, and user account management."
+    desc: "A modern e-commerce mobile application design with intuitive user flow, featuring product discovery, seamless checkout, and user account management.",
+    link: "https://www.figma.com/design/zLWOPpZ1qdOaXoJ07YC64F/EY?node-id=98-822&t=ruWKOcFSmZDgd3ie-1"
   },
   {
     title: "SaaS Landing Page",
     category: "Web Design",
     year: "2024",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-    layout: "portrait",
+    image: "/SAAS.png",
+    layout: "wide",
     tech: "Figma, Design System, Animation",
-    desc: "A comprehensive Landing design for a SaaS platform with stunnig animation. Clean and professional interface."
+    desc: "A comprehensive Landing design for a SaaS platform with stunnig animation. Clean and professional interface.",
+    link: "https://www.figma.com/design/LJ6MnONFkfEYiwj0dFTbug/Saas-Application---Cypress-landing-page-design.--Community-?node-id=0-1&t=ruWKOcFSmZDgd3ie-1"
   },
   {
     title: "Food Delivery App",
     category: "Mobile Design",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop",
+    image: "/JhatPot.png",
     layout: "standard",
     tech: "Figma, User Journey, User Research",
-    desc: "Mobile app design for food delivery service with location-based restaurant discovery, real-time order tracking, and payment integration."
+    desc: "Mobile app design for food delivery service with location-based restaurant discovery, real-time order tracking, and payment integration.",
+    link: "https://www.figma.com/design/RM01wHnDxksc8cUS8RaZeX/grocery-app?node-id=22-6&t=ruWKOcFSmZDgd3ie-1"
   },
   {
     title: "Athena Wallet App",
     category: "App Design",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=1969&auto=format&fit=crop",
-    layout: "portrait",
+    image: "/Athena Wallet.png",
+    layout: "standard",
     tech: "Figma, Security UX, Accessibility",
-    desc: "Secure and user-friendly web3 application with account management, portfolio management, and investment planning tools powered by AI."
+    desc: "Secure and user-friendly web3 application with account management, portfolio management, and investment planning tools powered by AI.",
+    link: "https://www.figma.com/design/CokTLWsz6apm1sNoHAkkl6/Athena-wallet?node-id=113-303&t=ruWKOcFSmZDgd3ie-1"
   },
   {
     title: "Nostalgic Kolkata",
     category: "Web Design",
     year: "2023",
-    image: "https://images.unsplash.com/photo-1558431382-27e303142255?q=80&w=1974&auto=format&fit=crop",
+    image: "Kolkata.png",
     layout: "wide",
     tech: "Figma, Social UX, Content Strategy",
-    desc: "A nostalgic representation of my home city with eligent design and creativity."
+    desc: "A nostalgic representation of my home city with eligent design and creativity.",
+    link: "https://www.figma.com/design/Si7Nyv7Q124KBKKP6E7fN9/Kolkata?node-id=1-67&t=ruWKOcFSmZDgd3ie-1"
   }
 ];
 
@@ -78,9 +83,12 @@ function DesignCard({ design, index }: { design: typeof uiDesigns[0]; index: num
           style={{ scale }}
           src={design.image}
           alt={design.title}
-          className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale hover:grayscale-0"
+          className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0"
         />
         <div className="absolute inset-0 bg-mist-black/20 group-hover:bg-transparent transition-colors duration-700" />
+        
+        {/* Bottom Gradient for Text Readability */}
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-mist-black via-mist-black/50 to-transparent pointer-events-none" />
         
         {/* Hover Grain Intensification Placeholder */}
         <div className="absolute inset-0 opacity-0 group-hover:opacity-10 pointer-events-none transition-opacity duration-700 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-repeat" />
@@ -102,9 +110,15 @@ function DesignCard({ design, index }: { design: typeof uiDesigns[0]; index: num
         <p className={`mt-2 text-[10px] uppercase tracking-widest text-muted-lime font-medium ${isEven ? '' : 'ml-auto'}`}>
           {design.tech}
         </p>
-        <button className="mt-6 text-[10px] uppercase tracking-[0.3em] font-medium border-b border-kimono-white/20 pb-1 hover:border-muted-lime hover:text-muted-lime transition-all duration-500">
-          View Design
-        </button>
+        {design.link && design.link !== "#" ? (
+          <a href={design.link} target="_blank" rel="noreferrer" className="inline-block mt-6 text-[10px] uppercase tracking-[0.3em] font-medium border-b border-kimono-white/20 pb-1 hover:border-muted-lime hover:text-muted-lime transition-all duration-500">
+            View Design
+          </a>
+        ) : (
+          <button className="mt-6 text-[10px] uppercase tracking-[0.3em] font-medium border-b border-kimono-white/20 pb-1 hover:border-muted-lime hover:text-muted-lime transition-all duration-500 cursor-not-allowed opacity-50">
+            Coming Soon
+          </button>
+        )}
       </motion.div>
     </motion.div>
   );
