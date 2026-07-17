@@ -84,14 +84,20 @@ export default function Hero() {
           </p>
           
           <div className="mt-12 flex flex-wrap gap-4 md:gap-6">
-            <button className="px-8 py-3 bg-muted-lime text-mist-black text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-kimono-white transition-colors duration-500 rounded-full">
-              Explore Work
-            </button>
-            <button className="px-8 py-3 border border-kimono-white/20 text-kimono-white text-[10px] uppercase tracking-[0.2em] font-medium hover:bg-kimono-white hover:text-mist-black transition-all duration-500 rounded-full backdrop-blur-sm">
-              Contact
-            </button>
             <a 
-              href="/files/Resume.pdf" 
+              href="#work"
+              className="px-8 py-3 bg-muted-lime text-mist-black text-[10px] uppercase tracking-[0.2em] font-bold hover:bg-kimono-white transition-colors duration-500 rounded-full flex items-center justify-center"
+            >
+              Explore Work
+            </a>
+            <a 
+              href="#contact"
+              className="px-8 py-3 border border-kimono-white/20 text-kimono-white text-[10px] uppercase tracking-[0.2em] font-medium hover:bg-kimono-white hover:text-mist-black transition-all duration-500 rounded-full backdrop-blur-sm flex items-center justify-center"
+            >
+              Contact
+            </a>
+            <a 
+              href="/files/Sayan_Resume.pdf" 
               download
               className="px-8 py-3 border border-kimono-white/20 text-kimono-white text-[10px] uppercase tracking-[0.2em] font-medium hover:bg-kimono-white hover:text-mist-black transition-all duration-500 rounded-full backdrop-blur-sm flex items-center justify-center"
             >
