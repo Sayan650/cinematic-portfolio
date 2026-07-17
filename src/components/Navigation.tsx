@@ -15,6 +15,10 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 w-full z-[100] px-8 py-10 flex justify-between items-start pointer-events-none">
       <Link 
         href="/" 
+        onClick={(e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
         className="text-xs uppercase tracking-[0.3em] font-medium pointer-events-auto hover:text-muted-lime transition-colors duration-500"
       >
         Sayan / Portfolio

@@ -110,6 +110,23 @@ export default function Hero() {
       {/* Atmospheric Fog Overlay */}
       <div className="absolute inset-0 z-30 pointer-events-none bg-gradient-to-t from-mist-black via-transparent to-transparent opacity-60" />
       
+      {/* Scroll Indicator */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 1 }}
+        className="absolute bottom-12 right-8 md:right-20 z-40 flex flex-col items-center gap-4 hidden md:flex"
+      >
+        <span className="text-[10px] uppercase tracking-[0.3em] text-kimono-white/50" style={{ writingMode: 'vertical-rl' }}>Scroll</span>
+        <div className="w-[1px] h-16 bg-kimono-white/20 relative overflow-hidden">
+          <motion.div 
+            className="w-full h-1/2 bg-muted-lime absolute top-0 left-0"
+            animate={{ y: ["-100%", "200%"] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "circInOut" }}
+          />
+        </div>
+      </motion.div>
+      
       <style jsx>{`
         .outline-text {
           -webkit-text-stroke: 1px rgba(250, 250, 250, 0.3);
