@@ -16,7 +16,7 @@ export default function Contact() {
     
     setLoading(true);
     // Note: Replace these with your actual EmailJS credentials
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formRef.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_9pr8n6a', 'template_0t5d2u8', formRef.current, 'mJR0CygJeAC75iQxe')
       .then(() => {
         setSuccess(true);
         formRef.current?.reset();
