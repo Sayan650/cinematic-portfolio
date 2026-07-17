@@ -101,7 +101,7 @@ export default function Contact() {
             <a href="https://github.com/Sayan650" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">GitHub</a>
             <a href="https://www.linkedin.com/in/sayanp650-nitdgp/" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">LinkedIn</a>
             <a href="https://x.com/sayanp650" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Twitter/X</a>
-            <a href="https://instagram.com/paulland2002" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Instagram</a>
+            <a href="https://www.instagram.com/white_coller.engineer/" target="_blank" rel="noreferrer" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Instagram</a>
             <a href="mailto:sayanp650@gmail.com" className="text-[10px] uppercase tracking-widest text-muted-gray hover:text-kimono-white transition-colors">Email</a>
           </div>
           <p className="text-[10px] uppercase tracking-widest text-muted-gray">
